@@ -1,6 +1,6 @@
 {
-  "name": "Webpack + React Sample",
-  "id": "",
+  "name": "Figma Plugin Starter",
+  "id": "1186759968601112104",
   "api": "1.0.0",
   "main": "dist/code.js",
   "ui": "dist/ui.html",
