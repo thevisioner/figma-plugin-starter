@@ -1,8 +1,6 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import "./ui.css";
-
-declare function require(path: string): any;
 
 function App() {
   const inputRef = React.useRef<HTMLInputElement>(null);
@@ -39,4 +37,6 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("react-page"));
+const container = document.getElementById("app");
+const root = createRoot(container!);
+root.render(<App />);
